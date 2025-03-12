@@ -1,4 +1,4 @@
-# Nome do Mini Projeto
+# Quiz interativo com React
 
 Crie um quiz interativo sobre mulheres que marcaram a história, utilizando nosa API do legado feminino.
 
