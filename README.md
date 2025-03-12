@@ -1,30 +1,31 @@
 # Nome do Mini Projeto
 
-(um parágrafo explicando)
+Crie um quiz interativo sobre mulheres que marcaram a história, utilizando nosa API do legado feminino.
 
 ## 🤓 Antes de começar
 
-(Coloque aqui algum setup / boilerplate e explicações se houver. Se não houver, essa seção pode ser apagada)
+Para essa aplicação, disponibilizamos uma API gratuita para que possa consumir os dados. Nesse mini projeto faremos um quiz de perguntas e respostas, mas fique a vontade para criar outros exemplos utilizando nossa API.
 
+Acesso a API()[]
 ## 🔨 Requisitos
-
 - Requisito 1
+	- Criar a tela inicial com um botão de iniciar quiz
 - Requisito 2
-
-	> 👀 **Dicas:**
-	> - Dica A sobre Req 2.
-	> - Dica B sobre Req 2.
-
+	- Criar um componente de pergunta e respostas.
+	- Implementar a lógica de verificação da resposta correta.
 - Requisito 3
-- ...
+	- Exibir a quantidade de acertos no final do quiz. 
+
+
+> 👀 Dicas:
+- Utilize o estado do React (useState) para armazenar a resposta selecionada.
+- Para validação, pode-se comparar a resposta escolhida com a correta armazenada no estado.
+
 
 ## 🔨 Desafio extra para quem quer ir além
 
-(Essa seção é opcional)
-
-- Requisito extra 1. 
-- Requisito extra 2.
-
+- Adicionar um temporizador para cada pergunta.
+  
 ## 🎨 Design Sugerido
 
 Temos uma sugestão de design no Figma. Entretanto, fique à vontade para montar a aplicação conforme a sua criatividade.
@@ -39,13 +40,7 @@ Temos uma sugestão de design no Figma. Entretanto, fique à vontade para montar
 
 #### React
 
-- Habilidade 1 do React
-- Habilidade 2
+- Gerenciamento de estado com useState
 
-#### TailwindCSS
+- Renderização condicional
 
-- Habilidade 1 do TailwindCSS
-
-### Pré requisitos
-
-(coloque aqui se houver algum)
