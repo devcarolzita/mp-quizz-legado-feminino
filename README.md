@@ -6,6 +6,8 @@ Crie um quiz interativo sobre mulheres que marcaram a história, utilizando nosa
 
 Para essa aplicação, disponibilizamos uma API gratuita para que possa consumir os dados. Nesse mini projeto faremos um quiz de perguntas e respostas, mas fique a vontade para criar outros exemplos utilizando nossa API.
 
+Para utilizar API acesse a [documentação](https://docs.apis.codante.io/legado-feminino)
+
 Acesso a API()[]
 ## 🔨 Requisitos
 - Requisito 1
