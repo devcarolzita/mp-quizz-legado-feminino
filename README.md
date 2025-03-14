@@ -8,7 +8,6 @@ Para essa aplicação, disponibilizamos uma API gratuita para que possa consumir
 
 Para utilizar API acesse a [documentação](https://docs.apis.codante.io/legado-feminino)
 
-Acesso a API()[]
 ## 🔨 Requisitos
 - Requisito 1
 	- Criar a tela inicial com um botão de iniciar quiz
