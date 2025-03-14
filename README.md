@@ -1,6 +1,6 @@
 # Quiz interativo com React
 
-Crie um quiz interativo sobre mulheres que marcaram a história, utilizando nosa API do legado feminino.
+Crie um quiz interativo sobre mulheres que marcaram a história, utilizando nossa API do legado feminino.
 
 ## 🤓 Antes de começar
 
