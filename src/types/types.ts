@@ -1,7 +1,8 @@
 export type ButtonPropsType = {
   navigateLink: string,
   textLink: string,
-  nextQuestion?: () => void
+  nextQuestion?: () => void,
+  score?: number
 }
 
 export type typeData = {
@@ -22,5 +23,4 @@ export type newQuestion = {
   question: typeNewQuestion,
   nextQuestion: () => void,
   index: number,
-  handleAnswer: (isCorrect: boolean) => void
 }

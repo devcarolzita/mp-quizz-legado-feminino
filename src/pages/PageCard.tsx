@@ -7,7 +7,6 @@ const PageCard = () => {
   const [data, setData] = useState<typeData[]>([]);
   const [newQuestions, setNewQuestions] = useState <typeNewQuestion []>([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(1);
-  const [score, setScore] = useState(0);
 
   useEffect(() => {
     const getData = async () => {
@@ -49,19 +48,13 @@ const PageCard = () => {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
     }
   }
-  const handleAnswer = (isCorrect: boolean) => {
-    if(isCorrect){
-      setScore((prevScore) => prevScore + 1)
-    }
-  }
-
  
-  console.log(score, 'score');
+ 
   
   return (
     <div>
       {newQuestions.length > 1 && 
-      <QuizCard  question = {newQuestions[currentQuestionIndex]} nextQuestion={nextQuestion} index = { currentQuestionIndex} handleAnswer = { handleAnswer}/> }
+      <QuizCard  question = {newQuestions[currentQuestionIndex]} nextQuestion={nextQuestion} index = { currentQuestionIndex} /> }
     </div>
     
   )

@@ -3,11 +3,12 @@ import ButtonCard from "./ButtonCard"
 import { newQuestion } from "../types/types"
 
 
-const QuizCard = ({question, nextQuestion, index, handleAnswer, score}: newQuestion) => {
+const QuizCard = ({question, nextQuestion, index}: newQuestion) => {
   const [correctAnswer, setCorrectAnswer] = useState(false);
-  const [selectedOption, setSelectedOption] = useState();
+  const [selectedOption, setSelectedOption] = useState<string | null>(null);
   const [visibleAnswer, setVisibleAnswer] = useState(false);
   const [shuffledOptions, setShuffledOptions] = useState<string[]>([]);
+  const [score, setScore] = useState(0);
 
   const handleClick = (option: string) => {
     //se o option tiver correto, fica verde
@@ -20,12 +21,17 @@ const QuizCard = ({question, nextQuestion, index, handleAnswer, score}: newQuest
   }
 
   const handleNextQuestin = () => {
-    setSelectedOption(undefined);
+    setSelectedOption(null);
     setCorrectAnswer(false);
     setVisibleAnswer(false);
     nextQuestion();
   }
 
+  const handleAnswer = (isCorrect: boolean) => {
+    if(isCorrect){
+      setScore((prevScore) => prevScore + 1)
+    }
+  }
 
   useEffect(() => {
     const shuffled = [...question.options].sort(() => 0.5 - Math.random());
@@ -50,7 +56,7 @@ const QuizCard = ({question, nextQuestion, index, handleAnswer, score}: newQuest
     </ul>
     
     {visibleAnswer? (correctAnswer ? <p className="bg-green-300 p-4 rounded font-bold text-black cursor-pointer text-sm w-full">Correto</p> : <div className="bg-red-300 p-4 rounded text-black cursor-pointer text-sm w-full"> <p className="font-bold" >Incorreto! </p> <p>Essa informação é referente a {question.nameWoman}</p></div>) : '' }
-    <ButtonCard navigateLink={index === 5 ? '/result' : '/quiz'} score={score} textLink='Próxima pergunta' nextQuestion = { handleNextQuestin}/>
+    <ButtonCard navigateLink={index === 5 ? '/result' : '/quiz'} textLink='Próxima pergunta' nextQuestion = { handleNextQuestin} score={score}/>
 </div>
   )
 }
