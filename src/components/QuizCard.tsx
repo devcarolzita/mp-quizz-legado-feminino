@@ -46,7 +46,7 @@ const QuizCard = ({question, nextQuestion, index}: newQuestion) => {
   return (
     <div className="bg-black text-white rounded-2xl p-10 flex items-center flex-col max-w-md lg:max-w-sm text-center gap-5">
      
-    <img src="./public/assets/coroa.png" alt="Ícone de coroa"  />
+    <img src="./assets/coroa.png" alt="Ícone de coroa"  />
     <p>Pergunta {index} de 5</p>
     <h2 className="text-4xl font-bold">Qual alternativa descreve essa informação ?</h2>
     <p className="text-lg">{question.description}</p>

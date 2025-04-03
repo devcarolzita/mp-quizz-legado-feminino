@@ -8,7 +8,7 @@ const ButtonCard = ({textLink, navigateLink = "/", nextQuestion, score}: ButtonP
     navigate(navigateLink === '/result' ? `/result?score=${score}` : '/quiz');
     nextQuestion?.();
     }
-    } > {textLink} <img src="./public/assets/seta.png" /> </button>
+    } > {textLink} <img src="./assets/seta.png" /> </button>
   )
 }
 

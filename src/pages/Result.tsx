@@ -20,7 +20,7 @@ const Result = () => {
   return (
     <div  className="bg-black text-white rounded-2xl p-10 flex items-center flex-col max-w-md lg:max-w-sm text-center gap-5 ">
       <div className="flex flex-col items-center gap-2">
-        <img src="./public/assets/trofeu.png" alt="" />
+        <img src="./assets/trofeu.png" alt="" />
         <h2 className="text-lg font-bold">Quiz Concluído!</h2>
         <p className="text-4xl font-bold">{score}/5</p>
         <p className="text-xl">{message}</p>
