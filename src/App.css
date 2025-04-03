@@ -9,5 +9,6 @@
     justify-content: center;
     min-width: 340px;
     height: 100vh;
+    padding: 20px;
   }
 }

@@ -44,14 +44,14 @@ const QuizCard = ({question, nextQuestion, index}: newQuestion) => {
     
   }
   return (
-    <div className="bg-black text-white rounded-2xl p-10 flex items-center flex-col max-w-md lg:max-w-sm text-center gap-5">
+    <div className="bg-black text-white rounded-2xl p-10 flex items-center flex-col max-w-sm text-center gap-5">
      
     <img src="./assets/coroa.png" alt="Ícone de coroa"  />
     <p>Pergunta {index} de 5</p>
     <h2 className="text-4xl font-bold">Qual alternativa descreve essa informação ?</h2>
     <p className="text-lg">{question.description}</p>
     <ul className="flex flex-wrap items-center justify-between gap-2">
-    {shuffledOptions.map((element, index) =>  <li className={`p-4 rounded font-bold text-black cursor-pointer text-sm lg:w-[145px] truncate ${selectedOption === element ? 
+    {shuffledOptions.map((element, index) =>  <li className={`w-[140px] p-4 rounded font-bold text-black cursor-pointer text-sm truncate ${selectedOption === element ? 
       correctAnswer ? 'bg-green-300' : 'bg-red-300' : 'bg-purple-300'}`} onClick={() => handleClick(element)} key={index}>{element}</li>)}
     </ul>
     
